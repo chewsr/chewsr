@@ -16,5 +16,12 @@ $(document).ready(function() {
     $('#modal-video').on('shown.bs.modal', function () {
         player.api('play');
     });
+    
+    var vimeo_iframe = $('#bg-video')[0];
+    var player = $f(vimeo_iframe)
+
+    player.addEvent('ready', function() {
+        player.api('setVolume', 0)
+    })
             
 });
