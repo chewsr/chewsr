@@ -16,12 +16,20 @@ $(document).ready(function() {
     $('#modal-video').on('shown.bs.modal', function () {
         player.api('play');
     });
-    
-    var vimeo_iframe = $('#bg-video')[0];
-    var player = $f(vimeo_iframe)
+  
 
-    player.addEvent('ready', function() {
-        player.api('setVolume', 0)
-    })
+
+    
             
 });
+
+
+var bgPlayer
+$(function(){
+  var vimeo_iframe = document.getElementById('bg-video')
+  bgPlayer = $f(vimeo_iframe)
+
+  $('#bg-video').load(function() {
+    bgPlayer.api('setVolume', 0)
+  })
+})
