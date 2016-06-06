@@ -1,0 +1,9 @@
+#modal-video.modal.modal-video(tabindex='-1', role='dialog', aria-labelledby='videoModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+        h4#videoModalLabel.modal-title.sr-only Video Tour
+      .modal-body
+        .video-container
+          iframe#vimeo-video(src='//player.vimeo.com/video/28872840?color=ffffff&wmode=transparent', width='720', height='405', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
