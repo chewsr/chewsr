@@ -1,0 +1,1 @@
+aws s3 sync --acl public-read ../build s3://web.chewsr.com --cache-control max-age=300

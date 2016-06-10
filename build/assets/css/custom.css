@@ -10,3 +10,13 @@
   left: 0;
   background: rgba(0,0,0,.8);
 }
+
+@media (min-width: 992px) {
+  .promo {
+    padding-top: 120px;
+  }
+}
+
+.press .press-list li {
+  text-align: center;
+}
