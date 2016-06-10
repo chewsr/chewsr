@@ -44,6 +44,9 @@ $(document).ready(function() {
     
     /* ======= Header Background Slideshow - Flexslider ======= */    
     /* Ref: https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties */
+    if ($(window).width() < 640) {
+      $('.slide-2').remove()
+    }
     
     $('.bg-slider').flexslider({
         animation: "fade",

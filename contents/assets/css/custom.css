@@ -11,9 +11,23 @@
   background: rgba(0,0,0,.8);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .promo {
     padding-top: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slide-2 {
+    display: none;
+  }
+  
+  .homepage-logo {
+    width: 100px;
+  }
+  
+  .headline-bg + .section, .bg-slider-wrapper + .section {
+    padding-top: 0
   }
 }
 
