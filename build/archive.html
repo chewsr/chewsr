@@ -16,6 +16,19 @@
     <link rel="stylesheet" href="/assets/css/custom.css">
   </head>
   <body class="home-page">
+    <!-- Google Tag Manager-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MRP253" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+      var dataLayer = [];
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MRP253');
+    </script>
+    <!-- End Google Tag Manager-->
     <header id="header" class="header navbar-fixed-top">
       <div class="container">
         <h1 class="logo"><a href="index.html"><span class="text">Chewsr</span></a></h1>
@@ -25,23 +38,10 @@
           </div>
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active nav-item"><a href="index.html">Home</a></li>
-              <li class="nav-item"><a href="features.html">Features</a></li>
-              <li class="nav-item"><a href="pricing.html">Pricing</a></li>
-              <li class="nav-item dropdown"><a data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#" class="dropdown-toggle">Pages <i class="fa fa-angle-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a href="download.html">Download Apps</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>
-                  <li><a href="blog-category.html">Blog Category</a></li>
-                  <li><a href="blog-archive.html">Blog Archive</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </li>
-              <!-- //dropdown-->
-              <li class="nav-item"><a href="login.html">Log in</a></li>
-              <li class="nav-item nav-item-cta last"><a href="signup.html" class="btn btn-cta btn-cta-secondary">Sign Up Free</a></li>
+              <li class="nav-item home-nav"><a href="index.html">Home</a></li>
+              <li class="nav-item how-nav"><a href="index.html">How it works</a></li>
+              <li class="nav-item about-nav"><a href="index.html">About us</a></li>
+              <li class="nav-item nav-item-cta last"><a href="index.html" class="btn btn-cta btn-cta-secondary">Sign Up Free</a></li>
             </ul>
           </div>
         </nav>
@@ -51,16 +51,16 @@
       <div class="flexslider bg-slider">
         <ul class="slides">
           <li class="slide slide-1"></li>
-          <li class="slide">
+          <li class="slide slide-2">
             <div class="filter"></div>
-            <iframe id="bg-video" src="//player.vimeo.com/video/165500034?background=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;byline=0&amp;title=0&amp;api=1" frameborder="0" allowfullscreen="" style="top: -7%; left: 0px; height: 113%; width: 100%;"></iframe>
+            <iframe id="bg-video" src="//player.vimeo.com/video/165500034?background=1&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;byline=0&amp;title=0&amp;api=1" frameborder="0" allowfullscreen="" style="top: 0%; left: 0px; height: 100%; width: 100%;"></iframe>
           </li>
         </ul>
       </div>
     </div>
     <section class="promo section section-on-bg">
       <div class="container text-center">
-        <p><img src="/assets/images/logo/logo-chewsr.svg" class="homepage-logo"></p>
+        <p><img src="/assets/images/logo/logo-chewsr.png" class="homepage-logo"></p>
         <h2 class="title">Let your customers<br>EAT WITH THEIR EYES</h2>
         <p class="intro">Chewsr is a Visual Ordering System connecting the Bricks & Mortar Foodservice Industry with E-commerce. Save time, increase sales and get to know your customer with Chewsr.</p>
         <p><a href="signup.html" class="btn btn-cta btn-cta-primary">Try CHEWSR now</a></p>
@@ -83,20 +83,8 @@
                 <p>Your customers eat with their eyes. We provide a way for customers to see your entire menu as beautiful food photos (like the ones on instagram).  Our software enables your customers to to see and order food at your restaurant using images instead of a menu. </p>
               </div>
             </div>
-            <!--
-            .quote
-             .quote-profile
-               img.img-responsive.img-circle(src='assets/images/people/profile-s-1.png', alt='')
-             // //profile
-             .quote-content
-               blockquote
-                 p
-                   a(href='https://twitter.com/3rdwave_themes', target='_blank') Myles Munro
-                   |  When it’s really busy, it’s hard for our staff to take orders, make pizza’s and give great customer service. Chewsr’s VOS will help to manage these busy periods, increasing both our sales and customer satisfaction.
-               p.source Homeslice Pizza
-            -->
             <figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7"><img src="assets/images/figures/chewsr-iphone.jpg" alt="" class="img-responsive">
-              <figcaption class="figure-caption">(Screenshot: WHY restaurants love it) </figcaption>
+              <!-- figcaption.figure-caption WHY restaurants love it-->
             </figure>
           </div>
           <div class="row item">
@@ -104,8 +92,7 @@
               <h3 class="title">Integrates with your existing devices.</h3>
               <div class="desc">
                 <p>Chewsr is a Visual Ordering System (VOS) that customers access via their smartphones, to place an order from images of each item on your menu, directly into your POS system via a universal cloud based API.</p>
-                <p>Our VOS is really cool for restaurant operators too. It’s like having a extra pair of hands, that will help with keeping your staff cost down, and is always ready to help with taking orders and increasing sales. Customers (particularly the really busy ones) are able to place an order in their own time, rather than fidget in the queue on a busy night, or tapping their fingers impatiently at their table, waiting for the waiters to come over. </p>
-                <p>Plus we never call in sick!</p>
+                <p>Our Visual Ordering System creates efficiency in the workplace. Rather than having waiters perform menial, repetitive tasks such as taking orders, receiving payments and explaining menu items, especially for allergies and dietaries; Chewsr automates these tasks while allowing the waiters time to offer personalised customer service and a focus on upselling.</p>
               </div>
               <!--
               .quote
@@ -121,7 +108,7 @@
             </div>
             <figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7"><img src="assets/images/figures/chewsr-iphone-integration.jpg" alt="" class="img-responsive">
               <div class="control text-center">
-                <button type="button" data-toggle="modal" data-target="#modal-video" class="play-trigger"><i class="fa fa-play"></i></button>
+                <button type="button" data-toggle="modal" data-target="#modal-video" class="play-trigger hidden"><i class="fa fa-play"></i></button>
               </div>
               <!-- //control-->
             </figure>
@@ -141,7 +128,7 @@
             </figure>
           </div>
           <!-- //item-->
-          <div class="row item last-item">
+          <div class="row item last-item about-us-section">
             <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
               <h3 class="title">About Us</h3>
               <div class="desc">
@@ -165,7 +152,7 @@
             </ol>
             <div class="carousel-inner">
               <div class="item active">
-                <figure class="profile"><img src="assets/images/people/profile-m-1.png" alt=""></figure>
+                <figure class="profile"><img src="assets/images/people/mckenzie.png" alt=""></figure>
                 <div class="content">
                   <blockquote><i class="fa fa-quote-left"></i>
                     <p>“Loved your app and the efficiency, especially as I was in a foreign city!” </p>
@@ -174,7 +161,7 @@
                 </div>
               </div>
               <div class="item">
-                <figure class="profile"><img src="assets/images/people/profile-m-2.png" alt=""></figure>
+                <figure class="profile"><img src="assets/images/people/myles.png" alt=""></figure>
                 <div class="content">
                   <blockquote><i class="fa fa-quote-left"></i>
                     <p>When it’s really busy, it’s hard for our staff to take orders, make pizza’s and give great customer service. Chewsr’s VOS will help to manage these busy periods, increasing both our sales and customer satisfaction.</p>
@@ -183,7 +170,7 @@
                 </div>
               </div>
               <div class="item">
-                <figure class="profile"><img src="assets/images/people/profile-m-3.png" alt=""></figure>
+                <figure class="profile"><img src="assets/images/people/kevin.png" alt=""></figure>
                 <div class="content">
                   <blockquote><i class="fa fa-quote-left"></i>
                     <p>I know I sell great food, but the description just doesn’t do my food justice and this has really been hurting my sales. Chewsr’s Visual Ordering System offers the perfect solution.</p>
@@ -224,9 +211,9 @@
               <p class="intro">Stay up to date with the latest news and offers from Chewsr</p>
               <form class="signup-form navbar-form">
                 <div class="form-group">
-                  <input type="text" placeholder="Enter your email address" class="form-control">
+                  <input type="email" placeholder="Enter your email address" class="form-control email-input">
                 </div>
-                <button type="submit" class="btn btn-cta btn-cta-primary">Subscribe Now</button>
+                <button type="submit" class="btn btn-cta btn-cta-primary email-button">Subscribe Now</button>
               </form>
             </div>
           </p>
@@ -241,43 +228,57 @@
               <div class="footer-col-inner">
                 <h3 class="title">About us</h3>
                 <ul class="list-unstyled">
-                  <li><a href="#"><i class="fa fa-caret-right"></i>Who we are</a></li>
-                  <li><a href="#"><i class="fa fa-caret-right"></i>Press</a></li>
-                  <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
-                  <li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>
+                  <li><a href="#" class="about-nav"><i class="fa fa-caret-right"></i>Who we are</a></li>
                   <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
                 </ul>
               </div>
             </div>
             <div class="footer-col links col-md-3 col-sm-4 col-xs-12 sm-break">
               <div class="footer-col-inner">
-                <h3 class="title">Support</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>
-                  <li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>
-                  <li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>
-                  <li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>
-                </ul>
+                <!--
+                h3.title Support
+                ul.list-unstyled
+                  li
+                    a(href='#')
+                      i.fa.fa-caret-right
+                      | Terms of services
+                  li
+                    a(href='#')
+                      i.fa.fa-caret-right
+                      | Privacy
+                -->
               </div>
             </div>
             <div class="footer-col links col-md-3 col-sm-4 col-xs-12">
               <div class="footer-col-inner">
                 <h3 class="title">Follow us</h3>
                 <ul class="social list-inline">
-                  <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                  <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li>
+                  <li><a href="https://www.facebook.com/chewsrfoodapp" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.twitter.com/chewsrA" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://plus.google.com/102869484670742655194" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="https://www.linkedin.com/company/chewsr" target="_blank"><i class="fa fa-linkedin">                   </i></a></li>
+                  <li><a href="http://www.instagram.com/Chewsr_" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li class="row-end"><a href="http://chewsr.tumblr.com" target="_blank"><i class="fa fa-tumblr"></i></a></li>
                 </ul>
               </div>
             </div>
             <div class="footer-col connect col-xs-12 col-md-3">
               <div class="footer-col-inner">
                 <h3 class="title">Contact us</h3>
-                <p class="adr clearfix"><i class="fa fa-map-marker pull-left"></i><span class="adr-group pull-left"><span class="street-address">College Green</span><br><span class="region">56 College Green Road</span><br><span class="postal-code">BS1 XR18</span><br><span class="country-name">UK</span></span></p>
-                <p class="tel"><i class="fa fa-phone"></i>0800 123 4567</p>
-                <p class="email"><i class="fa fa-envelope-o"></i><a href="#"> info@chewsr.com</a></p><a href="https://twitter.com/chewsr" data-show-count="false" class="twitter-follow-button">Follow @3rdwave_themes</a>
+                <!--
+                p.adr.clearfix
+                  i.fa.fa-map-marker.pull-left
+                  span.adr-group.pull-left
+                    span.street-address College Green
+                    br
+                    span.region 56 College Green Road
+                    br
+                    span.postal-code BS1 XR18
+                    br
+                    span.country-name UK
+                -->
+                <p class="tel"><i class="fa fa-phone"></i> 1300 CHEWSR</p>
+                <p class="email"><i class="fa fa-envelope-o"></i><a href="#"> info@chewsr.com</a></p><a href="https://www.twitter.com/chewsrA" data-show-count="false" class="twitter-follow-button">Follow @chewsrA</a>
               </div>
             </div>
             <div class="clearfix"></div>
@@ -297,7 +298,7 @@
       </div>
       <!-- //footer-content-->
       <div class="bottom-bar">
-        <div class="container"><small class="copyright">Template Copyright @ <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small></div>
+        <div class="container"><small class="copyright">Copyright @ <a href="http://www.chewsr.com/" target="_blank">Chewsr PTY LTD</a></small></div>
       </div>
     </footer>
     <script src="/assets/plugins/jquery-1.12.3.min.js"></script>
@@ -319,7 +320,7 @@
           </div>
           <div class="modal-body">
             <div class="video-container">
-              <iframe id="vimeo-video" src="//player.vimeo.com/video/28872840?color=ffffff&amp;wmode=transparent" width="720" height="405" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+              <iframe id="vimeo-video" src="//player.vimeo.com/video/165500034?color=ffffff&amp;wmode=transparent" width="720" height="405" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
             </div>
           </div>
         </div>

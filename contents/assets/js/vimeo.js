@@ -25,11 +25,10 @@ $(document).ready(function() {
 
 
 var bgPlayer
-$(function(){
-  var vimeo_iframe = document.getElementById('bg-video')
-  bgPlayer = $f(vimeo_iframe)
 
-  $('#bg-video').load(function() {
-    bgPlayer.api('setVolume', 0)
-  })
+var vimeo_iframe = document.getElementById('bg-video')
+bgPlayer = $f(vimeo_iframe)
+
+$('#bg-video').load(function() {
+  bgPlayer.api('setVolume', 0)
 })

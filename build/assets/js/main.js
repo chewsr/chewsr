@@ -44,6 +44,9 @@ $(document).ready(function() {
     
     /* ======= Header Background Slideshow - Flexslider ======= */    
     /* Ref: https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties */
+    if ($(window).width() < 640) {
+      $('.slide-2').remove()
+    }
     
     $('.bg-slider').flexslider({
         animation: "fade",
@@ -96,4 +99,49 @@ $(document).ready(function() {
 	});
 
 
+});
+
+function scrollTo(e, ele) {
+  e.preventDefault();
+  $('html, body').animate({
+      scrollTop: ele.offset().top
+  },800);
+}
+
+$(document).ready(function(){
+  
+  
+  $(".btn-cta-primary, .btn-cta-secondary").click(function(e) {
+    scrollTo(e, $("#cta-section"))
+  })
+  
+  $('.home-nav').click(function(e){
+    scrollTo(e, $('body'))
+  })
+  
+  $('.how-nav').click(function(e) {
+    scrollTo(e, $('#why'))
+  })
+  
+  $('.about-nav').click(function(e) {
+    scrollTo(e, $('.about-us-section'))
+  })
+  
+  
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email)
+  }
+
+  $('.email-button').click(function(e){
+    var email = $('.email-input').val()
+    if (isEmail(email)) {
+      dataLayer.push({
+        event: 'email subscription',
+        'email': email
+      })
+    }
+  })
+  
+  
 });
