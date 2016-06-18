@@ -17,9 +17,6 @@ $(document).ready(function() {
         player.api('play');
     });
   
-
-
-    
             
 });
 
@@ -32,3 +29,13 @@ bgPlayer = $f(vimeo_iframe)
 $('#bg-video').load(function() {
   bgPlayer.api('setVolume', 0)
 })
+
+var int = 0
+
+var myInt = setInterval(function(){
+  if (int >= 50) {
+    clearInterval(myInt)
+  }
+  bgPlayer.api('setVolume', 0)
+  int++
+},100)

@@ -113,18 +113,42 @@ $(document).ready(function(){
   
   $(".btn-cta-primary, .btn-cta-secondary").click(function(e) {
     scrollTo(e, $("#cta-section"))
+    dataLayer.push({
+      event: 'click event',
+      'page': 'Subscription'
+    })
   })
   
   $('.home-nav').click(function(e){
     scrollTo(e, $('body'))
+    dataLayer.push({
+      event: 'click event',
+      'page': 'Home'
+    })
   })
   
   $('.how-nav').click(function(e) {
     scrollTo(e, $('#why'))
+    dataLayer.push({
+      event: 'click event',
+      'page': 'How it works'
+    })
+  })
+  
+  $('.giveback-nav').click(function(e) {
+    scrollTo(e, $('#giveback'))
+    dataLayer.push({
+      event: 'click event',
+      'page': 'Give back'
+    })
   })
   
   $('.about-nav').click(function(e) {
     scrollTo(e, $('.about-us-section'))
+    dataLayer.push({
+      event: 'click event',
+      'page': 'About Us'
+    })
   })
   
   
@@ -136,10 +160,15 @@ $(document).ready(function(){
   $('.email-button').click(function(e){
     var email = $('.email-input').val()
     if (isEmail(email)) {
+      var signup = $('.signup-form')
+      signup.empty()
+      signup.append('<div class="alert alert-success">Your subscription to Chewsr has been confirmed<br/>Thank you for your support.</div>')
+      
       dataLayer.push({
         event: 'email subscription',
         'email': email
-      })
+      })      
+      
     }
   })
   

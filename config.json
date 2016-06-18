@@ -1,7 +1,7 @@
 {
   "locals": {
     "url": "http://localhost:8080",
-    "name": "Chewsr",
+    "name": "Chewsr - Changing the way you order food",
     "owner": "Si Nguyen",
     "description": "Visual ordering system"
   },
